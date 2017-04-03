@@ -2,6 +2,7 @@
   float: left;
   width: 50%;
   padding-left: 30px;
+  padding-top: 12px;
 }
 
 .right-container {
@@ -34,7 +35,7 @@
   width: 100px;
 }
 
-h2 {
+#homeheading h2 {
   padding-top: 250px;
 }
 
@@ -49,12 +50,56 @@ h2 {
   font-size: 20px;
 }
 
+/*
+* Begin Terms of Service Styling
+*/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  #terms-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #terms-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  #terms-container {
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 2020px) {
+  #terms-container {
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+}
+
+#terms-container h2 {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#terms-container h3 {
+  margin-top: 40px;
+}
+
+/*
+* Begin Footer Styling
+*/
 footer {
-  position : absolute;
+  position : fixed;
     bottom : 0;
-    height : 40px;
+    height : 50px;
     width: 100%;
     margin-top : 40px;
+    background-color: #FFF;
 }
 
 footer a {
