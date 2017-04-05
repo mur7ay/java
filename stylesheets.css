@@ -91,6 +91,64 @@
 }
 
 /*
+* Begin FAQ Styling
+*/
+#faq-container {
+  margin-top: 170px;
+  margin-bottom: 200px;
+  width: 100%;
+}
+
+#faq-container h1 {
+  text-align: center;
+}
+
+#faq-container h2 {
+  padding-left: 200px;
+  margin-bottom: 25px;
+}
+
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    margin-left: 203px;
+    margin-right: 204px;
+    overflow: hidden;
+    transition: max-width 0.2s ease-out;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+/*
 * Begin Footer Styling
 */
 footer {

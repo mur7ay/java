@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Frequently Asked Questions | JavaBoxx</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/6bb8c1be44.js"></script>
+
+    <script type="text/javascript" src="faq.js"></script>
+
+</head>
+
+<body>
+    <!-- NavBar Content -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#fff">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img src="bean-logo.png" id="bean" />
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pricing.html">PRICING</a></li>
+                    <li><a href="signup.html">SIGNUP</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="faq-container">
+            <h1>Frequently Asked Questions</h1>
+            <hr style="width:80px; margin-bottom: 80px;" />
+
+            <h2>General</h2>
+
+            <button class="accordion">What is JavaBoxx?</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion"></button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>
+        <h4>HI</h4>
+    </main>
+
+    <footer>
+        <div class="left-container">
+            <a href="contact.html">CONTACT</a> &nbsp
+            <a href="faq.html">FAQ</a> &nbsp
+            <a href="privacy.html">PRIVACY POLICY</a> &nbsp
+            <a href="terms.html">TERMS OF SERVICE</a> &nbsp
+        </div>
+
+        <div class="right-container">
+            <a href="http://www.facebook.com/javaboxx"><i class="fa fa-facebook fa-2x" aria-hidden="true" style="margin-left:2px;margin-right:10px;"></i></a>
+            <a href="http://www.twitter.com/javaboxx"><i class="fa fa-twitter fa-2x" aria-hidden="true" style="margin-left:10px;margin-right:10px;"></i></a>
+            <a href="http://www.instagram.com/javaboxx"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="margin-left:10px;margin-right:10px;"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>
