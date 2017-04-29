@@ -19,6 +19,21 @@
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/6bb8c1be44.js"></script>
 
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBcde6hUhbtnnDd9sddWL-7Q7GoNkK682w",
+        authDomain: "javaboxx-53a99.firebaseapp.com",
+        databaseURL: "https://javaboxx-53a99.firebaseio.com",
+        projectId: "javaboxx-53a99",
+        storageBucket: "javaboxx-53a99.appspot.com",
+        messagingSenderId: "812375512388"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <!-- Start of Async Drift Code -->
     <script>
         ! function() {
@@ -82,20 +97,18 @@
     </nav>
 
     <main>
-        <div class="container" style="height:600px;">
-            <div class="container1">
-                <h2 id="homeheading">Treat Yourself With Hand Selected Coffee and Goodies Every Month</h2>
-                <p>
-                    Join thousands that already enjoy their boxes each month!
-                </p>
-                <button class="button-style">GET STARTED</button>
-                <button class="button-style">GIVE AS GIFT</button>
-            </div>
+      <div class="signup-container">
+        <form>
+          <input type="text" name="firstname" id="email" />
+          <input type="text" name="lastname" id="password" />
+          <input type="submit" value="Submit" />
+        </form>
+        <template><tr>
+    <td class="record"></td>
+    <td></td>
+  </tr></template>
+      </div>
 
-            <div class="container2">
-                <img src="bean-logo.png" id="bean-logo" />
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -115,6 +128,5 @@
 
 
 </body>
-
 
 </html>
